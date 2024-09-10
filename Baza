@@ -1,0 +1,61 @@
+https://erd.dbdesigner.net/designer/schema/1715789143-prilagojeno-ucenje
+
+
+Ucenec {
+	id integer pk increments
+	ime varchar(30)
+	priimek varchar(30)
+	email varchar(30) unique
+	geslo varchar(30)
+}
+
+Ucitelj {
+	id integer pk increments
+	ime varchar(30)
+	priimek varchar(30)
+	email varchar(30) unique
+	geslo varchar(30)
+}
+
+Predmet {
+	id integer pk increments
+	naziv varchar(30)
+	letnik varchar(5)
+}
+
+Administrator {
+	id integer pk increments
+	ime varchar(30)
+	priimek varchar(30)
+	email varchar(30) unique
+	geslo integer
+}
+
+Ucenci-predmeti {
+	id_predmeta integer > Predmet.id
+	id_ucenca integer > Ucenec.id
+}
+
+Ucitelji-predmeti {
+	id_predmeta integer > Predmet.id
+	id_ucitelja integer > Ucitelj.id
+}
+
+Naloge {
+	id integer pk increments
+	ucenec_id integer > Ucenec.id
+	predmet_id integer > Predmet.id
+	naslov varchar(30)
+	pot_do_datoteke varchar
+	datum_oddaje datetime
+}
+
+Gradiva {
+	id integer pk increments
+	predmet_id integer > Predmet.id
+	ucitelj_id integer > Ucitelj.id
+	naslov varchar(30)
+	pot_do_datoteke varchar
+	datum_nalaganja datetime
+}
+
