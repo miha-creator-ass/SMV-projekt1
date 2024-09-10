@@ -1,0 +1,36 @@
+Admin {
+	id integer pk increments unique
+	upor_ime varchar(30) unique
+	geslo varchar(30)
+}
+
+Predmet {
+	id integer pk increments unique
+	ime varchar(30) unique
+	id_ucit varchar
+}
+
+Ucitelj {
+	id integer pk increments unique
+	ime varchar(30)
+	priimek varchar(30)
+	upor_ime varchar(30) unique
+	geslo varchar(30)
+	id_predmeta integer
+}
+
+Ucenec {
+	id integer pk increments unique
+	ime varchar(30)
+	priimek varchar(30)
+	razred varchar(10)
+	emso integer unique
+	upor_ime varchar(30) unique
+	geslo varchar(30)
+}
+
+Ucilnica {
+	id integer pk increments unique
+	naziv varchar(30) unique
+	new_field integer
+}
