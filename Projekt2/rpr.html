@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spletna Učilnica</title>
+    <link rel="stylesheet" href="predmeti.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Spletna Učilnica</h1>
+            <nav>
+                <ul>
+                    <li><a href="domov.html">Domov</a></li>
+                    <li><a href="ucitelji.html">Učitelji</a></li>
+                    <li><a href="login.html">Prijava</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="side-menu">
+        <ul>
+            <br>
+            <br>
+            <br>
+            <li><a href="slo.html">Slovenščina</a></li>
+            <li><a href="mat.html">Matematika</a></li>
+            <li><a href="ang.html">Angleščina</a></li>
+            <li><a href="rob.html">Računalniško oblikovanje</a></li>
+            <li><a href="smv.html">Stroka moderne vsebine</a></li>
+            <li><a href="nup.html">Napredna uporaba baz</a></li>
+            <li><a href="rpr.html">Računalniški praktikum</a></li>
+            <li><a href="uip.html">Uporaba IKT pri poslovanju</a></li>
+            <li><a href="soc.html">Sociologija</a></li>
+            <li><a href="spo.html">Športna vzgoja</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="description">
+            <h2>Računalniški praktikum</h2>
+            <p>V tem predmetu se bomo osredotočili na:</p>
+            <ul>
+                <li>Številske sisteme in sestave</li>
+                <li>Delovanje in komponente računalnika</li>
+                <li>Omrežja</li>
+                <br>
+            </ul>
+        </section>
+        <section id="materials">
+            <h2>Navodila</h2>
+            <ul>
+                <li><a href="#">Naloga1</a></li>
+                <li><a href="#">Naloga2</a></li>
+                <li><a href="#">Naloga3</a></li>
+                <br>
+            </ul>
+        </section>
+        <section id="submit-assignment">
+            <h2>Oddaja Nalog</h2>
+            <form action="submit_assignment.php" method="POST" enctype="multipart/form-data">
+                <div><p>Nalogo oddaj v sledečem formatu: Priimek_Ime_NaslovNaloge.pdf</p>
+                </div>
+                <br>
+                <div class="input-box">
+                    <input type="file" id="assignment-file" name="assignment_file" accept=".pdf,.doc,.docx" required>
+                </div>
+                <br>
+                <button type="submit" class="submit-btn">Oddaj Nalogo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spletna Učilnica. Vse pravice pridržane.</p>
+    </footer>
+</body>
+</html>
