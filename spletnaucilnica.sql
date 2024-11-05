@@ -76,27 +76,6 @@ CREATE TABLE `naloge` (
 -- Odloži podatke za tabelo `naloge`
 --
 
-INSERT INTO `naloge` (`id`, `ucenec_id`, `predmet_id`, `naslov`, `pot_do_datoteke`, `datum_oddaje`) VALUES
-(1, 8, 3, 'prilagojeno-učenje.pdf', '', '2024-11-04 23:28:55'),
-(2, 8, 3, 'prilagojeno-učenje.pdf', '', '2024-11-04 23:37:10'),
-(3, 8, 3, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:39:22'),
-(4, 8, 3, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:43:41'),
-(5, 8, 2, 'SloSkills2024_Naloga_v_0_1_160', 'uploads/assignments/SloSkills2024_Naloga_v_0_1_16082024.pdf', '2024-11-04 23:49:28'),
-(6, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:51:45'),
-(7, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:51:48'),
-(8, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:56:40'),
-(9, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:57:36'),
-(10, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:58:11'),
-(11, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:58:35'),
-(12, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-04 23:59:25'),
-(13, 8, 2, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-05 00:00:21'),
-(14, 8, 6, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-05 00:03:46'),
-(15, 8, 6, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-05 00:23:02'),
-(16, 8, 9, 'prilagojeno-učenje.pdf', 'uploads/assignments/prilagojeno-učenje.pdf', '2024-11-05 00:23:42'),
-(17, 8, 4, 'p_1.pdf', 'uploads/assignments/p_1.pdf', '2024-11-05 00:31:25'),
-(18, 8, 3, 'Juršinič Filip - meja.docx', '', '2024-11-05 02:11:08'),
-(19, 8, 3, 'Juršinič Filip - meja.pdf', '', '2024-11-05 02:13:12');
-
 -- --------------------------------------------------------
 
 --
@@ -140,20 +119,6 @@ CREATE TABLE `ucenci_predmeti` (
 -- Odloži podatke za tabelo `ucenci_predmeti`
 --
 
-INSERT INTO `ucenci_predmeti` (`id_predmeta`, `id_ucenca`) VALUES
-(2, 3),
-(2, 3),
-(2, 3),
-(2, 3),
-(1, 10),
-(8, 10),
-(9, 10),
-(1, 8),
-(2, 8),
-(3, 8),
-(4, 8),
-(5, 8);
-
 -- --------------------------------------------------------
 
 --
@@ -173,15 +138,6 @@ CREATE TABLE `ucenec` (
 -- Odloži podatke za tabelo `ucenec`
 --
 
-INSERT INTO `ucenec` (`id`, `ime`, `priimek`, `email`, `username`, `geslo`) VALUES
-(2, NULL, NULL, 'marl@dijak', NULL, '$2y$10$tFzbIYss/1akUBCfvo3By.a'),
-(3, 'Ads', 'Mrh', 'ads1@dijak', NULL, '$2y$10$dLnbBIVwdyApmiJEnRmDzO9'),
-(6, 'Filip', 'Juršinič', 'majmun@dijak', NULL, '$2y$10$Lj.EyiGnZrCREgKPq709we5'),
-(7, 'Filip', 'Juršinič', 'miha@dijak', NULL, '$2y$10$5.N0ItY/c9fR.kgMji0I3ud'),
-(8, 'Filip', 'Juršinič', 'maj@dijak', NULL, '0000'),
-(9, 'Mark', 'Godec', 'drek@dijak', NULL, NULL),
-(10, 'marko', 'marko', 'marko@dijak', NULL, 'marko');
-
 -- --------------------------------------------------------
 
 --
@@ -200,12 +156,6 @@ CREATE TABLE `ucitelj` (
 -- Odloži podatke za tabelo `ucitelj`
 --
 
-INSERT INTO `ucitelj` (`id`, `ime`, `priimek`, `email`, `geslo`) VALUES
-(1, NULL, NULL, 'filip@ucitelj', '$2y$10$qaoYbZ1LJAk1pxOHeJYrb.U'),
-(2, 'Sara', 'Padarič', NULL, NULL),
-(3, 'Botjan', 'Nub', 'nub@ucitelj', NULL),
-(5, 'mrh', 'mrh', 'mrh@ucitelj', 'mrh');
-
 -- --------------------------------------------------------
 
 --
@@ -220,13 +170,6 @@ CREATE TABLE `ucitelji_predmeti` (
 --
 -- Odloži podatke za tabelo `ucitelji_predmeti`
 --
-
-INSERT INTO `ucitelji_predmeti` (`id_predmeta`, `id_ucitelja`) VALUES
-(1, 2),
-(1, 2),
-(1, 2),
-(3, 5),
-(8, 5);
 
 --
 -- Indeksi zavrženih tabel
